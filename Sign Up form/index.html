@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up Form</title>
+    <meta charset="UTF-8">
+	<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+	<form id="signupform">
+		
+		<h2>Sign Up Form</h2>
+		
+		<div class="float-five">
+			<label for="firstname">First Name</label>
+			<input type="text" id="firstname" required autofocus>
+		</div>
+	
+		<div class="float-five">
+			<label for="lastname">Last Name</label>
+			<input type="text" id="lastname" required>
+		</div>
+		
+		<label for="email">Email</label>
+		<input type="email" id="email" required>
+		
+		<label for="password">Password</label>
+		<input type="password" id="password" required>
+		
+		<label for="confirm_password">Confirm Password</label>
+		<input type="password" id="confirm_password" required>	  
+		
+		<input type="checkbox" required> I agree to your terms and conditions
+		<button id="submit-btn" type="submit">Sign Up</button>
+	</form>
+	
+	
+	<script type="text/javascript">
+		const form = document.getElementById("signupform");
+		
+		form.onsubmit = function () {
+			alert("Thank you for signing up");
+		};
+	</script>
+</body>
+</html>
